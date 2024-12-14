@@ -76,11 +76,13 @@ func _on_bonbon_recupere(eleve, bonbon):
 	# Supprimer le bonbon récupéré de la liste des bonbons
 	bonbons.erase(bonbon)
 	bonbon.queue_free()  # Supprimer le bonbon récupéré
-	respawn_bonbon(bonbon)  # Respawn du bonbon
+	respawn_bonbon()  # Respawn du bonbon
 
 # Fonction pour respawn un bonbon
-func respawn_bonbon(bonbon):
-	# Vérifier si le bonbon existe encore avant de le respawn
-	if is_instance_valid(bonbon):
-		bonbon.position = obtenir_position_aleatoire()
-		print("Bonbon respawné à :", bonbon.position)
+func respawn_bonbon():
+	# Créer et positionner un nouveau bonbon à une position aléatoire
+	var bonbon = bonbon_scene.instantiate()
+	bonbon.position = obtenir_position_aleatoire()
+	print("Bonbon respawné à :", bonbon.position)
+	add_child(bonbon)
+	bonbons.append(bonbon)

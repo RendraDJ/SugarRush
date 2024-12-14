@@ -32,8 +32,8 @@ func aller_vers_cible():
 			emit_signal("bonbon_recupere", self, cible)  # Émettre le signal
 			# Supprimer le bonbon récupéré
 			cible.queue_free()
-			# Informer le game_manager de respawner un bonbon
-			get_parent().respawn_bonbon(cible)  # Appeler la fonction dans le game_manager pour respawn le bonbon
+			# Informer le game_manager de respawn un bonbon
+			get_parent().respawn_bonbon()  # Appeler la fonction dans le game_manager pour respawn le bonbon
 			cible = null
 
 		# Vérifier si l'élève est en mouvement ou arrêté pour jouer l'animation

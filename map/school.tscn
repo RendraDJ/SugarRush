@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://dojqpb3uvsqjs"]
+[gd_scene load_steps=19 format=4 uid="uid://dojqpb3uvsqjs"]
 
 [ext_resource type="Texture2D" uid="uid://fesweuhdplfs" path="res://tileset/coolschool_A4.png" id="1_1p48w"]
 [ext_resource type="PackedScene" uid="uid://keo3wuxovwjl" path="res://agents/agent_maitresse.tscn" id="1_ge42p"]
@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://bint4c2tgoqgp" path="res://agents/agent_eleve_1.tscn" id="5_ujdco"]
 [ext_resource type="PackedScene" uid="uid://cr0r31b4161xy" path="res://map/candy.tscn" id="7_quwub"]
 [ext_resource type="Script" path="res://agents/eleve.gd" id="7_utuy7"]
+[ext_resource type="Texture2D" uid="uid://dn61g2tuo3r8y" path="res://Resources/scorep1.png" id="10_urwaq"]
+[ext_resource type="Texture2D" uid="uid://c5q8pyltgrcfx" path="res://Resources/scorep2.png" id="11_c2nji"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cebt1"]
 texture = ExtResource("1_1p48w")
@@ -795,3 +797,37 @@ script = ExtResource("7_utuy7")
 [node name="agent_eleve_2" parent="." instance=ExtResource("5_2ier1")]
 position = Vector2(27.9181, 11)
 script = ExtResource("7_utuy7")
+
+[node name="Score_eleve1" type="TextureRect" parent="."]
+offset_left = -183.694
+offset_top = 89.391
+offset_right = -39.6935
+offset_bottom = 149.391
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("10_urwaq")
+
+[node name="Label1" type="Label" parent="Score_eleve1"]
+layout_mode = 0
+offset_left = 87.7538
+offset_top = 13.0976
+offset_right = 127.754
+offset_bottom = 36.0976
+scale = Vector2(1.5, 1.5)
+text = "2"
+
+[node name="Score_eleve2" type="TextureRect" parent="."]
+offset_left = 110.347
+offset_top = 89.391
+offset_right = 254.347
+offset_bottom = 149.391
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_c2nji")
+
+[node name="Label2" type="Label" parent="Score_eleve2"]
+layout_mode = 0
+offset_left = 37.983
+offset_top = 15.0622
+offset_right = 77.983
+offset_bottom = 38.0622
+scale = Vector2(1.5, 1.5)
+text = "2"
