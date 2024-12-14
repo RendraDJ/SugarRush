@@ -76,9 +76,9 @@ func jouer_animation_deplacement(direction: Vector2):
 		else:
 			# Si l'élève se déplace verticalement
 			if direction.y > 0:
-				animated_sprite_2d.play("back_walk")  # Animation de marche vers l'arrière
+				animated_sprite_2d.play("front_walk")  # Animation de marche vers l'arrière
 			else:
-				animated_sprite_2d.play("front_walk")  # Animation de marche vers l'avant
+				animated_sprite_2d.play("back_walk")  # Animation de marche vers l'avant
 
 # Jouer l'animation d'inactivité en fonction de la direction
 func jouer_animation_idle():

@@ -789,9 +789,9 @@ position = Vector2(-14, -57)
 script = ExtResource("5_3bslt")
 
 [node name="agent_eleve_1" parent="." instance=ExtResource("5_ujdco")]
-position = Vector2(72.6916, 11)
+position = Vector2(-52.3903, 11)
 script = ExtResource("7_utuy7")
 
 [node name="agent_eleve_2" parent="." instance=ExtResource("5_2ier1")]
-position = Vector2(153, 11)
+position = Vector2(27.9181, 11)
 script = ExtResource("7_utuy7")
