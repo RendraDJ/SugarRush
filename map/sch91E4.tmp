@@ -774,6 +774,9 @@ script = ExtResource("1_k3jlh")
 eleves = [NodePath("agent_eleve_1"), NodePath("agent_eleve_2")]
 prof = NodePath("Maitresse")
 bonbon_scene = ExtResource("7_quwub")
+nombre_de_bonbons = null
+zone_spawn_min = null
+zone_spawn_max = null
 
 [node name="TileLayers" type="Node2D" parent="."]
 
